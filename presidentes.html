@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Presidentes de Colombia ordenados por año: periodo, partido político y foto.">
+  <title>Presidentes | Mini Portal de Colombia</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="flag-stripe" aria-hidden="true"></div>
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="index.html">Portal Colombia</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="departamentos.html">Departamentos</a></li>
+        <li><a href="presidentes.html" aria-current="page">Presidentes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-intro">
+      <h1>Presidentes de Colombia</h1>
+      <p class="lead">Mandatarios registrados en la API, ordenados por el año en que iniciaron su periodo (del más antiguo al más reciente).</p>
+    </section>
+
+    <section aria-labelledby="listado-titulo">
+      <h2 id="listado-titulo" class="section-title">Listado <span id="total-presidentes" class="count-badge"></span></h2>
+      <p id="estado" class="status" role="status" aria-live="polite"></p>
+      <ol id="presidentes" class="cards-grid cards-grid--people"></ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Fotos: Wikimedia Commons.</p>
+    </div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/presidentes.js"></script>
+</body>
+</html>

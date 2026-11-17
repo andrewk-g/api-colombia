@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explorador de los departamentos de Colombia: región, población, superficie y descripción.">
+  <title>Departamentos | Mini Portal de Colombia</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="flag-stripe" aria-hidden="true"></div>
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="index.html">Portal Colombia</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="departamentos.html" aria-current="page">Departamentos</a></li>
+        <li><a href="presidentes.html">Presidentes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-intro">
+      <h1>Explorador de departamentos</h1>
+      <p class="lead">Información de cada departamento de Colombia según la API: región, población, superficie y descripción.</p>
+    </section>
+
+    <section aria-labelledby="resumen-titulo">
+      <h2 id="resumen-titulo" class="section-title">Departamentos por región</h2>
+      <div id="resumen-regiones" class="summary-grid"></div>
+    </section>
+
+    <section aria-labelledby="listado-titulo">
+      <h2 id="listado-titulo" class="section-title">Listado <span id="total-departamentos" class="count-badge"></span></h2>
+      <p id="estado" class="status" role="status" aria-live="polite"></p>
+      <div id="departamentos" class="cards-grid"></div>
+    </section>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/departamentos.js"></script>
+</body>
+</html>
