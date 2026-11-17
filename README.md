@@ -23,6 +23,10 @@ Además, `index.html` es la página de inicio con enlaces a ambas secciones.
   - Archivos que ya no existen en Wikimedia (error 404). Para esos se buscaron imágenes válidas en Wikimedia Commons y se reemplazan por id en `IMAGENES_REEMPLAZO` (`js/presidentes.js`).
   - Si una imagen sigue fallando (o la API no trae imagen y no se encontró una libre), se reintenta una vez y luego se muestra `img/sin-foto.svg`. Esto pasa con la Junta Militar de 1957, José Antonio Montalvo, Rafael Azuero Manchola e Indalecio Liévano Aguirre.
 
+## Wiki
+
+La documentación detallada del proyecto está en la wiki: https://github.com/andrewk-g/api-colombia/wiki
+
 ## Tecnologías usadas
 
 - HTML5 semántico
@@ -44,6 +48,7 @@ Además, `index.html` es la página de inicio con enlaces a ambas secciones.
 │   └── presidentes.js
 ├── img/
 │   └── sin-foto.svg      # imagen de respaldo
+├── capturas/             # capturas de pantalla del README
 └── README.md
 ```
 
@@ -61,7 +66,23 @@ Además, `index.html` es la página de inicio con enlaces a ambas secciones.
 
 Se necesita conexión a internet, porque los datos se piden a la API en cada carga.
 
+## Capturas
 
+### Inicio
+
+![Página de inicio](capturas/inicio.png)
+
+### Explorador de departamentos
+
+![Explorador de departamentos con el conteo por región](capturas/departamentos.png)
+
+### Presidentes de Colombia
+
+![Presidentes de Colombia ordenados por año](capturas/presidentes.png)
+
+### Vista en móvil
+
+<img src="capturas/movil.png" alt="Explorador de departamentos en un celular" width="300">
 
 ## Estudiante
 
