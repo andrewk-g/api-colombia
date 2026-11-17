@@ -51,7 +51,7 @@ Además, `index.html` es la página de inicio con enlaces a ambas secciones.
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/<tu-usuario>/nombre-apellido-api-colombia.git
+   git clone https://github.com/andrewk-g/api-colombia.git
    ```
 2. Abre `index.html` en el navegador (doble clic), o sírvelo con un servidor local, por ejemplo la extensión **Live Server** de VS Code o:
    ```bash
